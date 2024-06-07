@@ -15,7 +15,7 @@ plt.imshow(image_matrix, cmap='gray')
 plt.title('Original Image')
 plt.show()
 
-
+#SVD 
 def compress_image(image_matrix, k):
     U, S, Vt = np.linalg.svd(image_matrix, full_matrices=False)
     S_k = np.diag(S[:k])
